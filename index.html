@@ -45,7 +45,7 @@ layout: default
             </section>
             <div class="post-meta">
               <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-  <!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
+              <span class="post-tags-set">on {% for tag in tags %}<span class="post-tag-{{tag}}">, <a href="/tag/{{tag}}">{{name}}</a></span>{% endfor %}</span>
             </div>
           </div>
         </article>
@@ -67,7 +67,7 @@ layout: default
             </section>
             <div class="post-meta">
               <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-<!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
+<!--            <span class="post-tags-set">on {% for tag in tags %}<span class="post-tag-{{slug}}">{% if tag == tags.first %}{% else %}, {% endif %}<a href="/tag/{{slug}}">{{name}}</a></span>{% endfor %}</span>-->
             </div>
           </div>
         </article>
@@ -88,8 +88,6 @@ layout: default
       {% endif %}
     </nav>
 
-
-    <!-- {{!! After all the posts, we have the previous/next pagination links }}
-    {{pagination}} -->
+    {{pagination}}
 
 </main>
