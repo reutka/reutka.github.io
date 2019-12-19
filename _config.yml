@@ -8,7 +8,7 @@ title: "ראו רעות"
 description: > # this means to ignore newlines until "email:"
    מחשבות, הגיגים וסיפורים
 
-email: Reut.mehager@gmail.com
+email: reut.mehager@gmail.com
 #blog logo
 logo: "/assets/images/df_logo.jpg"
 float_logo: true # true, false (default)
@@ -17,7 +17,7 @@ float_logo: true # true, false (default)
 cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
 
 name: 'רעות כגן'
-author: 'רעןת גכן'
+author: 'רעות כגן'
 author_image: "/assets/images/author.jpg"
 
 paginate:	5

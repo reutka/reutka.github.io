@@ -24,7 +24,7 @@
 }
 
 .site-nav {
-    float: right;
+    float: left;
     line-height: 56px;
 
     .menu-icon {
@@ -167,6 +167,7 @@
 
 .page-heading {
     font-size: 20px;
+    text-align: -webkit-right;
 }
 
 .post-list {
@@ -194,10 +195,12 @@
  * Posts
  */
 .post-header {
+    text-align: -webkit-right;
     margin-bottom: $spacing-unit;
 }
 
 .post-title {
+    text-align: -webkit-right;
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
@@ -209,6 +212,7 @@
 
 .post-content {
     margin-bottom: $spacing-unit;
+    text-align: -webkit-right;
 
     h2 {
         font-size: 32px;
